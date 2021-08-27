@@ -1,0 +1,6 @@
+start=3462.120000
+fullscreen=yes
+deinterlace=yes
+af=@acompressor:acompressor=attack=20:knee=2dB:release=250:makeup=8dB:ratio=3:threshold=-25dB
+sub-pos=101
+ab-loop-a=428.640000

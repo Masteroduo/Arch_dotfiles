@@ -1,0 +1,5 @@
+start=3444.780000
+fullscreen=yes
+deinterlace=yes
+af=@acompressor:acompressor=attack=20:ratio=3:makeup=8dB:threshold=-25dB:release=250:knee=2dB
+sid=2

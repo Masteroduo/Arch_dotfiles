@@ -1,0 +1,4 @@
+start=4.466667
+volume=82.000000
+fullscreen=yes
+af=@acompressor:acompressor=release=250:knee=2dB:attack=20:ratio=3:makeup=8dB:threshold=-25dB
