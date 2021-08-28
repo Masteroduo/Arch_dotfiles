@@ -1,5 +1,0 @@
-start=209.605229
-pause=yes
-deinterlace=yes
-af=@acompressor:acompressor=knee=2dB:attack=20:makeup=8dB:release=250:ratio=3:threshold=-25dB
-sub-pos=87

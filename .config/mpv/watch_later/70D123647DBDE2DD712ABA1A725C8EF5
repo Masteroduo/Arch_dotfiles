@@ -1,5 +1,0 @@
-start=3504.440000
-fullscreen=yes
-af=@acompressor:acompressor=knee=2dB:release=250:makeup=8dB:threshold=-25dB:ratio=3:attack=20
-panscan=0.100000
-sub-pos=94

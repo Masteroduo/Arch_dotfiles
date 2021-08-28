@@ -1,3 +1,0 @@
-start=776.966667
-volume=96.000000
-af=@acompressor:acompressor=knee=2dB:threshold=-25dB:release=250:attack=20:makeup=8dB:ratio=3
