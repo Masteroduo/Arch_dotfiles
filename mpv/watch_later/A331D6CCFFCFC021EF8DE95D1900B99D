@@ -1,0 +1,5 @@
+start=984.407000
+fullscreen=yes
+af=@acompressor:acompressor=release=250:makeup=8dB:attack=20:threshold=-25dB:ratio=3:knee=2dB
+aid=1
+sid=1
