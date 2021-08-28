@@ -1,5 +1,0 @@
-start=7.299000
-speed=2.000000
-pause=yes
-fullscreen=yes
-af=@acompressor:acompressor=release=250:ratio=3:threshold=-25dB:knee=2dB:attack=20:makeup=8dB
