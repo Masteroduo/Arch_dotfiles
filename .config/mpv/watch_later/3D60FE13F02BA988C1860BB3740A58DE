@@ -1,5 +1,0 @@
-start=960.960000
-volume=110.000000
-fullscreen=yes
-af=@acompressor:acompressor=attack=20:knee=2dB:makeup=8dB:release=250:threshold=-25dB:ratio=3
-sub-pos=101

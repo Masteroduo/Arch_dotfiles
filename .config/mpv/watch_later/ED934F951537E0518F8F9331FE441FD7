@@ -1,3 +1,0 @@
-start=3302.640000
-af=@acompressor:acompressor=release=250:attack=20:threshold=-25dB:ratio=3:makeup=8dB:knee=2dB
-sid=1

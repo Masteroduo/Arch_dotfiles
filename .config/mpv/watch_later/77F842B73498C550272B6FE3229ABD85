@@ -1,6 +1,0 @@
-start=5362.941000
-volume=98.000000
-af=@acompressor:acompressor=knee=2dB:makeup=8dB:ratio=3:threshold=%7%-27.5dB:release=250:attack=20
-panscan=1.000000
-sid=2
-sub-pos=87

@@ -1,3 +1,0 @@
-start=4.800000
-pause=yes
-af=@acompressor:acompressor=threshold=-25dB:ratio=3:release=250:attack=20:knee=2dB:makeup=8dB
