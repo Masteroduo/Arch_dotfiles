@@ -16,10 +16,11 @@ These are my dotfiles for my Arch Linux installation, feel free to use it on you
   11. Discord - We all also know what this is..
   12. Flameshot - My preferred screenshot utility.
   13. neovim - My preferred text editor.
-
+  
 Here is a one liner : `sudo pacman -S picom sxhkd polybar bspwm mpv kitty neofetch youtube-dl dunst rofi discord flameshot neovim`
 
 ## Other Applications I use
 1. Spotify(AUR) - My preferred music streaming service
 2. Teams(AUR) - A very gei app that is owned by a gei company which I need for a very gei school
 3. BetterDiscord - A Better client for Discord with many mods
+4. ZSH - I prefer ZSH over BASH.
