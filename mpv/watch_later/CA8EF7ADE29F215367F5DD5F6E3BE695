@@ -1,0 +1,3 @@
+start=3363.960000
+fullscreen=yes
+af=@acompressor:acompressor=knee=2dB:release=250:ratio=3:attack=20:makeup=8dB:threshold=-25dB
