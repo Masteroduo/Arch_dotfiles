@@ -1,0 +1,4 @@
+start=1338.212000
+af=@acompressor:acompressor=knee=2dB:release=250:ratio=3:makeup=8dB:threshold=-25dB:attack=20
+panscan=0.100000
+sid=1

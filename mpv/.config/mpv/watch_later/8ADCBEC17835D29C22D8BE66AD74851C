@@ -1,0 +1,4 @@
+start=835.050000
+pause=yes
+af=@acompressor:acompressor=makeup=8dB:knee=2dB:attack=20:threshold=-25dB:ratio=3:release=250
+panscan=1.000000
