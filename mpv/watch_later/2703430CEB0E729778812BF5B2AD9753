@@ -1,4 +1,0 @@
-start=352.936000
-mute=yes
-af=@acompressor:acompressor=threshold=-25dB:knee=2dB:release=250:ratio=3:makeup=8dB:attack=20
-sid=1
