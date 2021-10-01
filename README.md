@@ -16,8 +16,10 @@ These are my dotfiles for my Arch Linux installation, feel free to use it on you
   11. Discord - We all also know what this is..
   12. Flameshot - My preferred screenshot utility.
   13. neovim - My preferred text editor.
-  
-Here is a one liner : `sudo pacman -S picom sxhkd polybar bspwm mpv kitty neofetch youtube-dl dunst rofi discord flameshot neovim`
+  14. nitrogen - I use nitrogen to set wallpapers on my window managers
+
+Here is a one liner : `sudo pacman -S picom sxhkd bspwm nitrogen mpv kitty neofetch youtube-dl dunst rofi discord flameshot neovim` & `yay -S polybar`
+
 
 ## Other Applications I use
 1. Spotify(AUR) - My preferred music streaming service
