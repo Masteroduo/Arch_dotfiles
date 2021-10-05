@@ -18,11 +18,12 @@ super + Escape
 # bspwm hotkeys
 #
 
-# quit/restart bspwm
+# restart bspwm
 super + shift + r
 	bspc wm -r
 
-super + shift + e
+# quit bspwm
+super + ctrl + shift + e
 	bspc quit
 	
 
