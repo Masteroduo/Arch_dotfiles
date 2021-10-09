@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0-9+35"
+    geometry = "0x0-9+37"
 
     # Turn on the progess bar
     progress_bar = true
@@ -102,7 +102,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 60
+    idle_threshold = 0
 
     ### Text ###
 

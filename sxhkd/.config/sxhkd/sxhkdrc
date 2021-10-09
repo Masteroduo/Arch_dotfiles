@@ -119,6 +119,9 @@ super + shift + z
 super + shift + x
 	thunar
 
+super + shift + c
+	brave
+	
 # Spotify controls
 XF86Audio{Prev,Next}
     playerctl -p spotify {previous,next}
@@ -132,3 +135,6 @@ Print
 	
 super + Print
 	flameshot gui
+
+shift + Print
+	flameshot full -p ~/Pictures/Screenshots/	

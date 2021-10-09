@@ -17,9 +17,9 @@ These are my dotfiles for my Arch Linux installation, feel free to use it on you
   12. Flameshot - My preferred screenshot utility.
   13. neovim - My preferred text editor.
   14. nitrogen - I use nitrogen to set wallpapers on my window managers
-  15. Dolphin - My favorite File Manager
+  15. Thunar - My favorite File Manager. 
 
-Here is a one liner : `sudo pacman -S picom sxhkd bspwm dolphin nitrogen mpv kitty neofetch youtube-dl dunst rofi discord flameshot neovim` & `yay -S polybar`
+Here is a one liner : `sudo pacman -S picom sxhkd bspwm thunar nitrogen mpv kitty neofetch youtube-dl dunst rofi discord flameshot neovim` & `yay -S polybar`
 
 
 ## Other Applications I use
