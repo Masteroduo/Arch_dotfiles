@@ -28,6 +28,5 @@ bspc config focused_border_color	      "#5e81ac"
 
 
 bspc rule -a Spotify desktop='^4'
-bspc rule -a Gimp state=floating
+bspc rule -a firefox:Browser:'About Mozilla Firefox' state=floating
 bspc rule -a discord desktop='3' follow=off focus=off
-bspc rule -a File Upload state=floating rectangle=800x600+0+0 

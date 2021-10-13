@@ -1,10 +1,11 @@
 set clipboard+=unnamedplus
 set encoding=utf-8
 set number
-syntax enable 
+syntax enable
 set noswapfile
 set scrolloff=7
 set backspace=indent,eol,start
+set mouse=a
 
 call plug#begin()
 

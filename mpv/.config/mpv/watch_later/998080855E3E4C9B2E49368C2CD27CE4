@@ -1,4 +1,0 @@
-start=4.433333
-pause=yes
-contrast=-1
-af=@acompressor:acompressor=release=250:attack=20:makeup=8dB:ratio=3:knee=2dB:threshold=-25dB

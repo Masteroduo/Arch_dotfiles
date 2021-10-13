@@ -1,2 +1,0 @@
-start=2.384000
-af=@acompressor:acompressor=knee=2dB:attack=20:threshold=-25dB:makeup=8dB:ratio=3:release=250

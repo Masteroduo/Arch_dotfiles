@@ -1,4 +1,0 @@
-start=0.000000
-pause=yes
-af=@acompressor:acompressor=attack=20:release=250:makeup=8dB:knee=2dB:ratio=3:threshold=-25dB
-panscan=0.100000

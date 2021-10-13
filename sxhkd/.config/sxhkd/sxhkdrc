@@ -117,7 +117,7 @@ super + shift + z
 	firefox
 
 super + shift + x
-	thunar
+	dolphin
 
 super + shift + c
 	brave

@@ -1,5 +1,0 @@
-start=0.000000
-pause=yes
-af=@acompressor:acompressor=knee=2dB:ratio=3:threshold=-25dB:release=250:attack=20:makeup=8dB
-panscan=1.000000
-sub-pos=99

@@ -39,9 +39,8 @@ font-2 = Noto Sans CJK JP:size=12:style=Bold:antialias=true;1
 modules-left = bspwm i3
 modules-right = spotify date wlan battery pulseaudio 
 
-tray-position = none
-tray-padding = 0
-;tray-background = #0063ff
+;tray-position = right
+tray-padding = 1
 
 ;wm-restack = i3
 
