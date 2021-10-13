@@ -113,6 +113,7 @@ alias d="nvim .config/dunst/dunstrc"
 alias die="systemctl poweroff"
 alias reboot="systemctl reboot"
 alias bat="sudo tlp start"
+alias r="ranger"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

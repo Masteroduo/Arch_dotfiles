@@ -124,10 +124,10 @@ super + shift + c
 	
 # Spotify controls
 XF86Audio{Prev,Next}
-    playerctl -p spotify {previous,next}
+    playerctl {previous,next}
 
 XF86AudioPlay
-		playerctl -p spotify play-pause
+		playerctl play-pause
 
 # Screenshot
 Print
