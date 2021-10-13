@@ -1,5 +1,5 @@
 # Sha's Dotfiles
-These are my dotfiles for my Arch Linux installation, feel free to use it on your system and modify it according to yourneeds.
+These are my dotfiles for my Arch Linux installation, feel free to use it on your system and modify it according to your needs.
 
 ## Requirements:
 
