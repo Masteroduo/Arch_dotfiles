@@ -37,7 +37,7 @@ font-1 = JetBrainsMono Nerd Font:pixelsize=18;3
 font-2 = Noto Sans CJK JP:size=12:style=Bold:antialias=true;1
 
 modules-left = bspwm i3
-modules-right = spotify date wlan battery pulseaudio 
+modules-right = spotify date cpu temperature memory battery pulseaudio wlan
 
 ;tray-position = right
 tray-padding = 1
@@ -119,10 +119,10 @@ click-left = playerctl --player=spotify play-pause
 [module/wlan]
 type = internal/network
 interface = wlo1
-interval = 3.0
-format-connected =  直 <label-connected> 
+interval = 1
+format-connected = <label-connected> 
 format-connected-underline = ${colors.primary}
-label-connected =  %local_ip%
+label-connected =  ﮾ %downspeed:8% ﯁ %upspeed:8%
 format-disconnected = 睊 DISCONNECTED
 format-disconnected-underline = ${colors.primary}
 ;format-disconnected = <label-disconnected>
@@ -140,7 +140,7 @@ time = %I:%M %p
 time-alt = %I:%M:%S %p
 
 ;format-background = ${colors.primary}
-label =  %date%%time%
+label =  %date%%time%
 format-padding = 1
 format-underline = ${colors.primary}
 
@@ -214,7 +214,7 @@ format-disconnected =
 type = internal/cpu
 interval = 2
 ;format-prefix = " "
-format = <label>
+format =  <label>
 label =  %percentage:2%%
 ;format-background = ${colors.primary}
 format-padding = 1
@@ -223,7 +223,7 @@ format-underline = ${colors.primary}
 [module/memory]
 type = internal/memory
 interval = 2
-label =  %gb_used%
+label =  ﬙ %gb_used%
 ;format-background = ${colors.primary}
 format-padding = 1
 format-underline = ${colors.primary}
@@ -257,7 +257,7 @@ hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
 format = <label>
 format-warn = <ramp> <label-warn>
 ;format-background = ${colors.primary}
-label =  %temperature-c%
+label =  %temperature-c%
 label-warn = %temperature-c%
 format-padding=1
 format-underline = ${colors.primary}

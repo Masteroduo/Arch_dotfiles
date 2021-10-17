@@ -1,0 +1,2 @@
+start=14.033333
+af=@acompressor:acompressor=threshold=-25dB:attack=20:knee=2dB:release=250:ratio=3:makeup=8dB

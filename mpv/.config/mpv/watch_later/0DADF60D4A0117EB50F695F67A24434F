@@ -1,0 +1,5 @@
+start=5.400000
+fullscreen=yes
+af=@acompressor:acompressor=threshold=-25dB:attack=20:knee=2dB:release=250:ratio=3:makeup=8dB
+sub-ass-force-margins=yes
+video-aspect-override=1.777778
