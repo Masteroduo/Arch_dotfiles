@@ -1,11 +1,7 @@
 /** Basic config file **/
 
 configuration {
-  display-drun: "  ";
+  show-icons:         true;
   icon-theme:         "Papirus";
-  font: "JetBrainsMono Nerd Font Medium 15";
-  modi: "run,drun";
-  show-icons: false;
 }
 
-@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"

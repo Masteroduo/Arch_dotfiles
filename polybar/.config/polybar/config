@@ -3,7 +3,7 @@
 ########################
 
 [colors]
-background = #2E3440
+background = #434c5e
 background-alt = #81A1C1
 foreground = #FFFFFF
 foreground-alt = #ffffff
@@ -14,43 +14,42 @@ alert = #BF616A
 
 [bar/example]
 width = 100%
-height = 28
+height = 26
 radius = 0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 primary = ${colors.primary}
 
-line-size = 3
+line-size = 2
 
 
 ;padding-left = 1
 ;padding-right = 1 
 
-override-redirect = false
+override-redirect = true
 wm-restack = bspwm
 ;module-margin-left = 1 
 module-margin-right = 1
 
-font-0 = JetBrains Mono:pixelsize=13:style=Bold;2
-font-1 = JetBrainsMono Nerd Font:pixelsize=18;3
-font-2 = Noto Sans CJK JP:size=12:style=Bold:antialias=true;1
+font-0 = JetBrains Mono:pixelsize=12:style=Medium;2
+font-1 = JetBrainsMono Nerd Font:style=Regular:pixelsize=15;3
+font-2 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
 
-modules-left = bspwm i3
-modules-right = spotify date cpu temperature memory battery pulseaudio wlan
+modules-left = bspwm i3 spotify
+modules-center = date
+modules-right = temperature memory battery pulseaudio wlan
 
 ;tray-position = right
 tray-padding = 1
-
-;wm-restack = i3
-
-;override-redirect = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 [module/bspwm]
 type = internal/bspwm
+
+enable-scroll = false
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
@@ -106,7 +105,7 @@ label-urgent-padding = 1
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = " "
 format = <label>
 exec = python  /home/masteroduo/.config/polybar/spotify.py -f '{song}- {artist}'
 ;format-padding = 1 
@@ -120,10 +119,11 @@ click-left = playerctl --player=spotify play-pause
 type = internal/network
 interface = wlo1
 interval = 1
+formar-connected-padding-left = 1
 format-connected = <label-connected> 
 format-connected-underline = ${colors.primary}
-label-connected =  ﮾ %downspeed:8% ﯁ %upspeed:8%
-format-disconnected = 睊 DISCONNECTED
+label-connected =  ﮾ %ifname%
+format-disconnected = ﮾ DISCONNECTED
 format-disconnected-underline = ${colors.primary}
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
@@ -134,13 +134,13 @@ format-disconnected-underline = ${colors.primary}
 type = internal/date
 interval = 1
 ;date = %a %d %b, 
-date-alt = "%A,%d-%B-%Y | "
+date-alt = "%A, %d-%B-%Y | "
 
 time = %I:%M %p
 time-alt = %I:%M:%S %p
 
 ;format-background = ${colors.primary}
-label =  %date%%time%
+label =  %date%%time%
 format-padding = 1
 format-underline = ${colors.primary}
 
@@ -235,19 +235,6 @@ margin-bottom = 0
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-mount-0 = /
-label-mounted =   %free%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
-[module/xbacklight]
-type = internal/xbacklight
-format = <label>
-label =  %percentage%%
 
 [module/temperature]
 type = internal/temperature

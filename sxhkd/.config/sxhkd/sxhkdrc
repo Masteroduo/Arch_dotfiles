@@ -8,7 +8,11 @@ super + Return
 
 # program launcher
 super + d
-	rofi -show drun	
+	$HOME/.config/rofi/launchers/launcher.sh
+
+# Power menu
+ctrl + alt + Delete
+	$HOME/.config/rofi/powermenu/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + Escape

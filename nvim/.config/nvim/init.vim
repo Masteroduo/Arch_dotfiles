@@ -6,6 +6,8 @@ set noswapfile
 set scrolloff=7
 set backspace=indent,eol,start
 set mouse=a
+set completeopt=menuone,longest
+set shortmess+=c
 
 call plug#begin()
 
@@ -14,6 +16,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'preservim/nerdtree'
 Plug 'shaunsingh/nord.nvim'
+Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
 
