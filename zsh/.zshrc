@@ -107,12 +107,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias vi='nvim'
-alias b="nvim .config/bspwm/bspwmrc"
-alias s="nvim .config/sxhkd/sxhkdrc"
-alias p="nvim .config/picom/picom.conf"
-alias k="nvim .config/kitty/kitty.conf"
-alias bar="nvim .config/polybar/config"
-alias d="nvim .config/dunst/dunstrc"
+alias b="nvim ~/.config/bspwm/bspwmrc"
+alias s="nvim ~/.config/sxhkd/sxhkdrc"
+alias p="nvim ~/.config/picom/picom.conf"
+alias k="nvim ~/.config/kitty/kitty.conf"
+alias bar="nvim ~/.config/polybar/config"
+alias d="nvim ~/.config/dunst/dunstrc"
 alias die="systemctl poweroff"
 alias reboot="systemctl reboot"
 alias bat="sudo tlp start"
