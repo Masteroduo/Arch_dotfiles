@@ -9,7 +9,7 @@ set mouse=a
 set completeopt=menuone,longest
 set shortmess+=c
 
-call plug#begin()
+call plug#begin('~/local/share/nvim/plugged')
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'

@@ -6,7 +6,7 @@
         "displayUpdateNotes": true,
         "ignoreMutedGuilds": false,
         "ignoreMutedChannels": false,
-        "ignoreBots": true,
+        "ignoreBots": false,
         "ignoreSelf": false,
         "ignoreBlockedUsers": false,
         "ignoreNSFW": false,
@@ -17,7 +17,7 @@
         "messageCacheCap": 1000,
         "savedMessagesCap": 1000,
         "reverseOrder": false,
-        "onlyLogWhitelist": true,
+        "onlyLogWhitelist": false,
         "whitelist": [],
         "blacklist": [],
         "notificationBlacklist": [
@@ -25,9 +25,9 @@
         ],
         "toastToggles": {
             "sent": false,
-            "edited": true,
-            "deleted": true,
-            "ghostPings": true
+            "edited": false,
+            "deleted": false,
+            "ghostPings": false
         },
         "toastTogglesDMs": {
             "sent": false,

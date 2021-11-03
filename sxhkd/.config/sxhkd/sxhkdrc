@@ -20,7 +20,9 @@ super + Escape
 
 #
 # bspwm hotkeys
-#
+
+super + alt + {Left,Right}
+	bspc desktop -f {prev,next}
 
 # restart bspwm
 super + shift + r

@@ -5,6 +5,27 @@
     },
     "default": [
         {
+            "url": "https://tenor.com/view/sigma-sigma-male-grindset-hustle-money-gif-22373695",
+            "src": "https://media.tenor.co/videos/d28f6e80c09730f07a9a847d0faaa945/mp4",
+            "width": 510,
+            "height": 640,
+            "format": "VIDEO"
+        },
+        {
+            "width": 508,
+            "height": 640,
+            "src": "//media.tenor.com/videos/42f3c18dbde24ce78db49dd62f344d00/mp4",
+            "url": "https://tenor.com/view/discord-regular-show-pops-light-mode-scared-gif-21753497",
+            "format": "VIDEO"
+        },
+        {
+            "url": "https://media.discordapp.net/attachments/827924715971674192/903674818359087104/20211029_120039.gif",
+            "src": "https://images-ext-2.discordapp.net/external/XMies6ulkbGbk6yM16Y7FIzRDxU0rEVcFO7XQzR1Qls/https/media.discordapp.net/attachments/827924715971674192/903674818359087104/20211029_120039.gif",
+            "width": 630,
+            "height": 412,
+            "format": "IMAGE"
+        },
+        {
             "width": 498,
             "height": 300,
             "src": "//media.tenor.com/videos/b14e9d5e7430750a13c784ee2c20a1fa/mp4",
@@ -16,13 +37,6 @@
             "src": "https://images-ext-1.discordapp.net/external/1WMvJdzCZljsrFQ4hTzD3GWQSHKkzd5g49I07n0jxzE/https/media.discordapp.net/attachments/621257971762069506/903514068311232512/RDT_20211029_0806354334208715570420647.gif",
             "width": 360,
             "height": 360,
-            "format": "IMAGE"
-        },
-        {
-            "url": "https://media.discordapp.net/attachments/361222518679535617/903539063687086110/image0-11.gif",
-            "src": "https://images-ext-2.discordapp.net/external/DQj7Xt5ZwE96CQ0bhE3-p3Ol7Cb0DRaIHmLUo4V3Cmk/https/media.discordapp.net/attachments/361222518679535617/903539063687086110/image0-11.gif",
-            "width": 220,
-            "height": 347,
             "format": "IMAGE"
         },
         {
@@ -72,13 +86,6 @@
             "src": "https://images-ext-2.discordapp.net/external/lPSiMkeXZpzvKCs2XOw4hfgBciXB2zhf8Ex4xPlGcY4/https/media.discordapp.net/attachments/315599340385075218/899648149767999559/image0-31-1.gif",
             "width": 873,
             "height": 1200,
-            "format": "IMAGE"
-        },
-        {
-            "url": "https://media.discordapp.net/attachments/315599340385075218/901753685430906900/image0-31.gif",
-            "src": "https://media.discordapp.net/attachments/315599340385075218/901753685430906900/image0-31.gif",
-            "width": 400,
-            "height": 296,
             "format": "IMAGE"
         },
         {

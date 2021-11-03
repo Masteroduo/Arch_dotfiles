@@ -1,7 +1,5 @@
 /**
  * @name Apate
- * @version 1.4.6
- * @description Hide your secret Discord messages in other messages!
  * @author TheGreenPig, fabJunior, Aster
  * @source https://github.com/TheGreenPig/Apate/blob/main/Apate.plugin.js
  * @updateUrl https://raw.githubusercontent.com/TheGreenPig/Apate/main/Apate.plugin.js
@@ -46,17 +44,17 @@ module.exports = (() => {
 
 
 			],
-			version: "1.4.6",
+			version: "1.4.7",
 			description: "Apate lets you hide messages in other messages! - Usage: `cover message \*hidden message\*`",
 			github_raw: "https://raw.githubusercontent.com/TheGreenPig/Apate/main/Apate.plugin.js",
 			github: "https://github.com/TheGreenPig/Apate"
 		},
 		changelog: [
 			{
-				title: "Fixed",
-				type: "fixed",
+				title: "Added",
+				type: "added",
 				items: [
-					"Fixed the Error where Discord would crash when trying to set up End to End encryption.",
+					"Added feature to send messsages with no cover message in DMs with E2E. When you write a message, press Enter to send the message unencrypted and Ctrl+Enter to send it E2E encrypted.",
 				]
 			},
 		],
@@ -101,6 +99,7 @@ module.exports = (() => {
 			const ButtonLooksModule = ZLibrary.DiscordModules.ButtonData;
 			const ButtonWrapperClassesModule = BdApi.findModuleByProps('buttonWrapper', 'buttonContent');
 			const ChannelTextAreaContainerModule = BdApi.findModule(m => m.type?.render?.displayName === "ChannelTextAreaContainer");
+			const ChannelTextAreaUploadModule = BdApi.findModuleByProps("channelTextAreaUpload");
 			const CompactCozyModule = BdApi.findModuleByProps("compact", "cozy");
 			const ComponentDispatchModule = BdApi.findModuleByProps("ComponentDispatch");
 			const ComputePermissionsModule = BdApi.findModuleByProps("computePermissions");
@@ -124,7 +123,6 @@ module.exports = (() => {
 			const UserInfoBase = BdApi.findModule(m => m.default.displayName === "UserInfoBase");
 			const UserPopout = BdApi.findModule(m => m.default.displayName === "UserPopoutBody");
 			const UserStoreModule = BdApi.findModuleByProps("getUsers");
-			const ChannelTextAreaUploadModule = BdApi.findModuleByProps("channelTextAreaUpload");
 
 			/**
 			 * Apate banner which is displayed under some message which contains hidden text
@@ -373,218 +371,218 @@ module.exports = (() => {
 				}
 			}
 
-			let apateCSS = [
-				`.apateKeyButtonContainer {`,
-				`	display: flex;`,
-				`	justify-content: center;`,
-				`	align-items: center;`,
-				`}`,
-				`.apateEncryptionKeyButton {`,
-				`	transition: all 300ms ease;`,
-				`	overflow: hidden;`,
-				`	font-size: 1rem;`,
-				`	display: flex;`,
-				`	justify-content: center;`,
-				`	align-items: center;`,
-				`	clip-path: inset(0);`,
-				`	width: 3em;`,
-				`	height: 100%;`,
-				`}`,
-				`.apateEncryptionKeyContainer {`,
-				`	padding: 0;`,
-				`	width: 4rem;`,
-				`	height: 100%;`,
-				`}`,
-				`.apateEncryptionKey {`,
-				`	transition: all 300ms ease;`,
-				`	font-size: 1rem;`,
-				`	width: 3em;`,
-				`	height: 100%;`,
-				`}`,
-				`.apateHiddenImgWrapper {`,
-				`	margin: 10px;`,
-				`	max-width: 500px;`,
-				`	max-height: 400px;`,
-				`}`,
-				`.apateHiddenImg {`,
-				`	border-radius: 0.3em;`,
-				`	max-width: 100%;`,
-				`	max-height: inherit;`,
-				`}`,
-				`@keyframes apateRotate {`,
-				`	0%   { transform: rotate(0deg);   }`,
-				`	100% { transform: rotate(360deg); }`,
-				`}`,
-				`.apateHiddenMessage {`,
-				`	color: var(--text-normal);`,
-				`	padding: 0.4em 0.5em;`,
-				`	line-height: normal;`,
-				`	margin: .3em 0;`,
-				`	width: fit-content;`,
-				`	border-radius: 0 .8em .8em .8em;`,
-				`	max-width: 100%;`,
-				`	box-sizing: border-box;`,
-				`	background-image: `,
-				`		repeating-linear-gradient(-45deg, `,
-				`		var(--background-tertiary) 0em, `,
-				`		var(--background-tertiary) 1em, `,
-				`		var(--background-floating) 1em, `,
-				`		var(--background-floating) 2em);`,
-				`}`,
-				`.apateHiddenMessage.border {`,
-				`	border: 2px solid var(--interactive-muted);`,
-				`}`,
-				`.apateHiddenMessage.loading {`,
-				`	font-style: italic;`,
-				`	color: var(--text-muted);`,
-				`}`,
-				`.apateHiddenMessage.loading::after {`,
-				`	content: "[encrypting hidden message...]";`,
-				`	animation: changeLetter 1s linear infinite;`,
-				`}`,
-				`.apateHiddenMessage pre {`,
-				`	margin-right: 4rem;`,
-				`}`,
-				`.apateAboutMeHidden {`,
-				`	max-width: 90%;`,
-				`	font-size: 14px;`,
-				`	margin-top: -0.6rem;`,
-				`	margin-bottom: 0.6rem;`,
-				`}`,
-				`.apateE2ERequestMessage {`,
-				`	font-size: 1em;`,
-				`	padding: 1em;`,
-				`	color: white;`,
-				`}`,
-				`.apateE2ERequestMessage > button {`,
-				`	float: right;`,
-				`	position: relative;`,
-				`	text-algin: right;`,
-				`	margin-top: -8px;`,
-				`}`,
-				`.apateE2ERequestMessageWrapper{`,
-				`	background-color: var(--background-secondary);`,
-				`	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;`,
-				`	border-radius: 4px;`,
-				`}`,
-			].join("\n");
+			let apateCSS = 
+				`.apateKeyButtonContainer {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.apateEncryptionKeyButton {
+					transition: all 300ms ease;
+					overflow: hidden;
+					font-size: 1rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					clip-path: inset(0);
+					width: 3em;
+					height: 100%;
+				}
+				.apateEncryptionKeyContainer {
+					padding: 0;
+					width: 4rem;
+					height: 100%;
+				}
+				.apateEncryptionKey {
+					transition: all 300ms ease;
+					font-size: 1rem;
+					width: 3em;
+					height: 100%;
+				}
+				.apateHiddenImgWrapper {
+					margin: 10px;
+					max-width: 500px;
+					max-height: 400px;
+				}
+				.apateHiddenImg {
+					border-radius: 0.3em;
+					max-width: 100%;
+					max-height: inherit;
+				}
+				@keyframes apateRotate {
+					0%   { transform: rotate(0deg);   }
+					100% { transform: rotate(360deg); }
+				}
+				.apateHiddenMessage {
+					color: var(--text-normal);
+					padding: 0.4em 0.5em;
+					line-height: normal;
+					margin: .3em 0;
+					width: fit-content;
+					border-radius: 0 .8em .8em .8em;
+					max-width: 100%;
+					box-sizing: border-box;
+					background-image: 
+						repeating-linear-gradient(-45deg, 
+						var(--background-tertiary) 0em, 
+						var(--background-tertiary) 1em, 
+						var(--background-floating) 1em, 
+						var(--background-floating) 2em);
+				}
+				.apateHiddenMessage.border {
+					border: 2px solid var(--interactive-muted);
+				}
+				.apateHiddenMessage.loading {
+					font-style: italic;
+					color: var(--text-muted);
+				}
+				.apateHiddenMessage.loading::after {
+					content: "[encrypting hidden message...]";
+					animation: changeLetter 1s linear infinite;
+				}
+				.apateHiddenMessage pre {
+					margin-right: 4rem;
+				}
+				.apateAboutMeHidden {
+					max-width: 90%;
+					font-size: 14px;
+					margin-top: -0.6rem;
+					margin-bottom: 0.6rem;
+				}
+				.apateE2ERequestMessage {
+					font-size: 1em;
+					padding: 1em;
+					color: white;
+				}
+				.apateE2ERequestMessage > button {
+					float: right;
+					position: relative;
+					text-algin: right;
+					margin-top: -8px;
+				}
+				.apateE2ERequestMessageWrapper{
+					background-color: var(--background-secondary);
+					box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+					border-radius: 4px;
+				}
+			`;
 
-			let apateLeftKeyCSS = [
-				`.apateKeyButtonContainer {`,
-				`	margin-left: -0.6rem;`,
-				`	margin-right: 0.1rem;`,
-				`	height: 2.8em;`,
-				`	width: 3em;`,
-				`	align-items: flex-start;`,
-				`}`,
-				`.${ChannelTextAreaUploadModule.channelTextAreaUpload} .apateKeyButtonContainer, .apateKeyButtonContainer.edit {`,
-				`	margin-left: 0.3rem;`,
-				`	margin-right: -0.8rem;`,
-				`}`,
-			].join("\n");
-
-
-			let apateNoLoadingCSS = [
-				`.apateHiddenMessage.loading {`,
-				`	display: none;`,
-				`}`,
-				`.apateHiddenMessage.loading::after {`,
-				`display: none;`,
-				`}`,
-			].join("\n")
-
-			let apatePasswordCSS = [
-				`.form-control{`,
-				`	margin-bottom: 10px;`,
-				`}`,
-				`.btn-add{`,
-				`	background-color: rgb(12, 187, 50);`,
-				`	font-size: 1em;`,
-				`	color: white;`,
-				`	padding: 0.2em;`,
-				`	border-radius: .15rem;`,
-				`}`,
-				`.downloadListButton{`,
-				`	background-color: Teal;`,
-				`	color: white;`,
-				`	padding: 0.3em;`,
-				`	font-size: 1em;`,
-				`	margin-bottom: 10px;`,
-				`	border-radius: .25rem;`,
-				`}`,
-				`.uploadListButton{`,
-				`	background-color: Teal;`,
-				`	color: white;`,
-				`	padding: 0.3em;`,
-				`	font-size: 1em;`,
-				`	margin-bottom: 10px;`,
-				`	border-radius: .15rem;`,
-				`}`,
-				`.btn-passwords{`,
-				`	font-size: 1.3em;`,
-				`	padding: 0em;`,
-				`	background-color: transparent;`,
-				`}`,
-				`.dynamic-list{`,
-				`	display: flex;`,
-				`	-ms-flex-direction: column;`,
-				`	flex-direction: column;`,
-				`	padding-left: 0;`,
-				`	margin-bottom: 0;`,
-				`}`,
-				`.passwordLi{`,
-				`	width: fit-content;`,
-				`	text-align: left;`,
-				`	font-weight: bold;`,
-				`	padding: 0.4em 0.5em;`,
-				`	line-height: normal;`,
-				`	margin-bottom: 10px;`,
-				`	background-color: #000;`,
-				`	border: 1px solid`,
-				`	rgba(0,0,0,.125);`,
-				`	border-top-left-radius: .25rem;`,
-				`	border-top-right-radius: .25rem;`,
-				`	border-bottom-left-radius: .25rem;`,
-				`	border-bottom-right-radius: .25rem;`,
-				`}`,
-				`.ownPassword{`,
-				`	color: white;`,
-				`	background-color: transparent;`,
-				`}`,
-				`.selectedPassword{`,
-				`	background-color: white;`,
-				`}`,
-			].join("\n");
-
-			let apateSimpleCSS = [
-				`.apateHiddenMessage {`,
-				`	background: none;`,
-				`}`,
-			].join("\n");
+			let apateLeftKeyCSS = `
+				.apateKeyButtonContainer {
+					margin-left: -0.6rem;
+					margin-right: 0.1rem;
+					height: 2.8em;
+					width: 3em;
+					align-items: flex-start;
+				}
+				.${ChannelTextAreaUploadModule.channelTextAreaUpload} .apateKeyButtonContainer, .apateKeyButtonContainer.edit {
+					margin-left: 0.3rem;
+					margin-right: -0.8rem;
+				}
+			`;
 
 
-			let apateAnimateCSS = [
-				`.apateEncryptionKey:hover {`,
-				`	fill: dodgerBlue;`,
-				`	animation: apateRotate 0.5s ease;`,
-				`	animation-iteration-count: 1; `,
-				`}`,
-				`.apateEncryptionKey.calculating {`,
-				`	fill: orange;`,
-				`	animation: apateRotate 1s linear;`,
-				`	animation-direction: reverse;`,
-				`	animation-iteration-count: infinite;`,
-				`}`,
-				`.apateEncryptionKeyButton:hover {`,
-				`	width: 3em;`,
-				`}`,
-				`@keyframes changeLetter {`,
-				`	0%   { content: "[encrypting hidden message]";   }`,
-				`	33%  { content: "[encrypting hidden message.]";  }`,
-				`	66%  { content: "[encrypting hidden message..]"; }`,
-				`	100% { content: "[encrypting hidden message...]";}`,
-				`}`,
-			].join("\n");
+			let apateNoLoadingCSS = `
+				.apateHiddenMessage.loading {
+					display: none;
+				}
+				.apateHiddenMessage.loading::after {
+				display: none;
+				}
+			`;
+
+			let apatePasswordCSS = `
+				.form-control{
+					margin-bottom: 10px;
+				}
+				.btn-add{
+					background-color: rgb(12, 187, 50);
+					font-size: 1em;
+					color: white;
+					padding: 0.2em;
+					border-radius: .15rem;
+				}
+				.downloadListButton{
+					background-color: Teal;
+					color: white;
+					padding: 0.3em;
+					font-size: 1em;
+					margin-bottom: 10px;
+					border-radius: .25rem;
+				}
+				.uploadListButton{
+					background-color: Teal;
+					color: white;
+					padding: 0.3em;
+					font-size: 1em;
+					margin-bottom: 10px;
+					border-radius: .15rem;
+				}
+				.btn-passwords{
+					font-size: 1.3em;
+					padding: 0em;
+					background-color: transparent;
+				}
+				.dynamic-list{
+					display: flex;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					padding-left: 0;
+					margin-bottom: 0;
+				}
+				.passwordLi{
+					width: fit-content;
+					text-align: left;
+					font-weight: bold;
+					padding: 0.4em 0.5em;
+					line-height: normal;
+					margin-bottom: 10px;
+					background-color: #000;
+					border: 1px solid
+					rgba(0,0,0,.125);
+					border-top-left-radius: .25rem;
+					border-top-right-radius: .25rem;
+					border-bottom-left-radius: .25rem;
+					border-bottom-right-radius: .25rem;
+				}
+				.ownPassword{
+					color: white;
+					background-color: transparent;
+				}
+				.selectedPassword{
+					background-color: white;
+				}
+			`;
+
+			let apateSimpleCSS = `
+				.apateHiddenMessage {
+					background: none;
+				}
+			`;
+
+
+			let apateAnimateCSS = `
+				.apateEncryptionKey:hover {
+					fill: dodgerBlue;
+					animation: apateRotate 0.5s ease;
+					animation-iteration-count: 1; 
+				}
+				.apateEncryptionKey.calculating {
+					fill: orange;
+					animation: apateRotate 1s linear;
+					animation-direction: reverse;
+					animation-iteration-count: infinite;
+				}
+				.apateEncryptionKeyButton:hover {
+					width: 3em;
+				}
+				@keyframes changeLetter {
+					0%   { content: "[encrypting hidden message]";   }
+					33%  { content: "[encrypting hidden message.]";  }
+					66%  { content: "[encrypting hidden message..]"; }
+					100% { content: "[encrypting hidden message...]";}
+				}
+			`;
 
 			const colors = [
 				"MediumVioletRed",
@@ -1306,7 +1304,7 @@ module.exports = (() => {
 				}
 
 				/**
-				 * Takes an input and eturns null if the input doesn't match the apate regex and thus the message isn't correctly formed
+				 * Takes an input and returns null if the input doesn't match the apate regex and thus the message isn't correctly formed
 				 * otherwise returns an object with the cover message and hidden message
 				 * @param  {string}		input
 				 * @return {?Object}			null if the input is invalid, otherwise {coverMessage: String, hiddenMessage: String}
@@ -1316,18 +1314,25 @@ module.exports = (() => {
 
 					apateRegexResult = [...apateRegexResult];
 
-					if (!apateRegexResult.length) {
+					if (!apateRegexResult.length && !this.usesE2E()) {
 						BdApi.alert("Invalid input!", "Something went wrong... Mark your hidden message with stars `*` like this: `cover message *hidden message*`!");
 						return null;
 					}
-
-					let lastRegexMatch = apateRegexResult[apateRegexResult.length - 1];
-
-					let coverMessage = lastRegexMatch.input.slice(0, lastRegexMatch.index).trim();
-					let hiddenMessage = lastRegexMatch[0].slice(1, -1).trim();
-					let invalidEndString = lastRegexMatch.input.slice(lastRegexMatch.index + lastRegexMatch[0].length).trim();
-
-					if (!coverMessage && !this.settings.devMode) {
+					let coverMessage, hiddenMessage, invalidEndString;
+					
+					if(!this.usesE2E || apateRegexResult.length > 0) {
+						let lastRegexMatch = apateRegexResult[apateRegexResult.length - 1];
+						
+						coverMessage = lastRegexMatch.input.slice(0, lastRegexMatch.index).trim();
+						hiddenMessage = lastRegexMatch[0].slice(1, -1).trim();
+						invalidEndString = lastRegexMatch.input.slice(lastRegexMatch.index + lastRegexMatch[0].length).trim();
+					}else {
+						coverMessage ="";
+						hiddenMessage = input;
+						invalidEndString ="";
+					}
+					
+					if (!coverMessage && !this.settings.devMode && !this.usesE2E()) {
 						BdApi.alert("Invalid input!", "The Cover message must have at least one non-whitespace character (This is to prevent spam). Synatax: `cover message *hidden message*`");
 						return null;
 					}
@@ -1928,7 +1933,6 @@ module.exports = (() => {
 				}
 
 				patchMessages() {
-
 					BdApi.Patcher.after("Apate", MessageContent, "type", (_, [props], ret) => {
 						if (props.className && (props.className.includes("repliedTextContent-") || props.className.includes("threadMessageAccessoryContent-"))) {
 							return

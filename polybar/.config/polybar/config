@@ -33,12 +33,12 @@ wm-restack = bspwm
 module-margin-right = 1
 
 font-0 = JetBrains Mono:pixelsize=12:style=Medium;2
-font-1 = JetBrainsMono Nerd Font:style=Regular:pixelsize=15;3
+font-1 = jetbrainsmono nerd font:style=regular:pixelsize=15;3
 font-2 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
 
 modules-left = bspwm i3 spotify
 modules-center = date
-modules-right = temperature memory battery pulseaudio wlan
+modules-right = temperature cpu memory battery pulseaudio wlan
 
 ;tray-position = right
 tray-padding = 1
@@ -239,16 +239,9 @@ label = %title:0:30:...%
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 95
 hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
 format = <label>
-format-warn = <ramp> <label-warn>
 ;format-background = ${colors.primary}
 label =  %temperature-c%
-label-warn = %temperature-c%
 format-padding=1
 format-underline = ${colors.primary}
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}

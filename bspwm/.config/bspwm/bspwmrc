@@ -1,6 +1,5 @@
 #! /bin/sh
 
-
 picom -b --experimental-backends &
 nitrogen --restore &
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -10,7 +9,7 @@ dunst &
 #xsetroot -cursor_name breeze_cursors
 xsetroot -cursor_name left_ptr &
 
-bspc monitor -d 1 2 3 4 5 6 
+bspc monitor -d 1 2 3 4 5 6 7 
 
 bspc config ignore_ewmh_focus true
 bspc config window_gap					 0	
