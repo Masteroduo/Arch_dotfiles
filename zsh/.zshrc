@@ -1,5 +1,5 @@
 # To Flex on ubuntu users
-neofetch
+#neofetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -111,8 +111,13 @@ alias b="nvim ~/.config/bspwm/bspwmrc"
 alias s="nvim ~/.config/sxhkd/sxhkdrc"
 alias p="nvim ~/.config/picom/picom.conf"
 alias k="nvim ~/.config/kitty/kitty.conf"
+alias z="zathura"
+alias ls="lsd -l"
+alias la="lsd -alh"
 alias bar="nvim ~/.config/polybar/config"
 alias d="nvim ~/.config/dunst/dunstrc"
+alias zsh="nvim ~/.zshrc"
+alias neovim="nvim ~/.config/nvim/init.vim"
 alias die="systemctl poweroff"
 alias reboot="systemctl reboot"
 alias bat="sudo tlp start"

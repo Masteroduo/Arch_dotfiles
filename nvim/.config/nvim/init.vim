@@ -15,7 +15,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'preservim/nerdtree'
-Plug 'shaunsingh/nord.nvim'
+Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'vim-scripts/AutoComplPop'
 
 call plug#end()
@@ -26,5 +26,7 @@ endif
 
 lua require 'colorizer'.setup()
 
-let g:nord_disable_background = v:false
-colorscheme nord
+colorscheme nightfly
+
+nmap <F5> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1

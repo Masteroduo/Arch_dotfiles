@@ -3,11 +3,11 @@
 ########################
 
 [colors]
-background = #2e3440
-background-alt = #81A1C1
-foreground = #FFFFFF
+background = #011627
+background-alt = #82aaff
+foreground = #ffffff
 foreground-alt = #ffffff
-primary = #81A1C1
+primary = #7fdbca
 secondary = #e60053
 alert = #BF616A
 
@@ -32,8 +32,8 @@ wm-restack = bspwm
 ;module-margin-left = 1 
 module-margin-right = 1
 
-font-0 = JetBrains Mono:pixelsize=12:style=Medium;2
-font-1 = jetbrainsmono nerd font:style=regular:pixelsize=15;3
+#font-0 = JetBrains Mono:pixelsize=12:style=Medium;2
+font-0 = Iosevka NerdFont:style=Medium:pixelsize=14;3
 font-2 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
 
 modules-left = bspwm i3 spotify
