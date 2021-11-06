@@ -7,7 +7,7 @@ background = #011627
 background-alt = #82aaff
 foreground = #ffffff
 foreground-alt = #ffffff
-primary = #7fdbca
+primary = #82aaff
 secondary = #e60053
 alert = #BF616A
 
