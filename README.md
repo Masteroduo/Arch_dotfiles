@@ -1,7 +1,16 @@
 # Sha's Dotfiles
 These are my dotfiles for my Arch Linux installation, feel free to use it on your system and modify it according to your needs.
 
-## Requirements:
+## Screenshots
+![image](https://user-images.githubusercontent.com/79645349/140621097-1639d968-05a6-4cdc-b4d3-924e77f6c756.png)
+![image](https://user-images.githubusercontent.com/79645349/140621293-8a90b639-7a8f-48ba-bd19-4aaf3a451c54.png)
+![image](https://user-images.githubusercontent.com/79645349/140621139-725c2cd2-768c-4ab0-835c-a197c379ec52.png)
+![image](https://user-images.githubusercontent.com/79645349/140621173-6a3873c0-02aa-4528-9771-e282d9acf514.png)
+![image](https://user-images.githubusercontent.com/79645349/140621313-24d1950d-8a49-467c-9e15-6398351f4b62.png)
+
+
+
+## Requirements
 
 1. picom - my preferred compositor. This helps me achieve transparency,shadows,etc.
 2. sxhkd - Hotkey Daemon. I use sxhkd to manage my keybindings.
