@@ -4,10 +4,10 @@
 
 [colors]
 background = #011627
-background-alt = #82aaff
+background-alt = #0585C6
 foreground = #ffffff
 foreground-alt = #ffffff
-primary = #82aaff
+primary = #07b9a4
 secondary = #e60053
 alert = #BF616A
 
