@@ -1,6 +1,3 @@
-####################
-#Sha's BSPWM Config#
-####################
 #! /bin/sh
 
 picom -b --experimental-backends &
