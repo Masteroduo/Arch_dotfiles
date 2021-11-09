@@ -1,3 +1,5 @@
-start=1355.856000
+start=1356.356000
+pause=yes
 fullscreen=yes
 af=@acompressor:acompressor=knee=2dB:release=250:attack=20:threshold=-25dB:ratio=3:makeup=8dB
+sub-ass-override=force

@@ -5,6 +5,13 @@
     },
     "default": [
         {
+            "url": "https://tenor.com/view/cope-cope-harder-leete-fingee-leete-fingee-gif-22541306",
+            "src": "https://media.tenor.co/videos/0f5d078261bb4c7ac3efe78f4e727fa3/mp4",
+            "width": 328,
+            "height": 640,
+            "format": "VIDEO"
+        },
+        {
             "url": "https://tenor.com/view/sigma-sigma-male-grindset-hustle-money-gif-22373695",
             "src": "https://media.tenor.co/videos/d28f6e80c09730f07a9a847d0faaa945/mp4",
             "width": 510,
@@ -45,13 +52,6 @@
             "width": 320,
             "height": 240,
             "format": "IMAGE"
-        },
-        {
-            "url": "https://tenor.com/view/chungus-big-chungus-mud-explode-anus-gif-17168030",
-            "src": "https://media.tenor.co/videos/1a6951e923620f548b04ff0dcd309da0/mp4",
-            "width": 420,
-            "height": 640,
-            "format": "VIDEO"
         },
         {
             "url": "https://media.discordapp.net/attachments/874447411144171610/900185741626331156/1A28A896-4A60-4DA6-9AD2-5147651E1915.gif",
