@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0-9+37"
+    geometry = "0x0-9+35"
 
     # Turn on the progess bar
     progress_bar = true
@@ -84,7 +84,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#81A1C1"
+    frame_color = "#0585C6"
 
     # Define a color for the separator.
     # possible values are:
@@ -106,7 +106,7 @@
 
     ### Text ###
 
-    font = JetBrains Mono Medium 10
+    font = Iosevka NerdFont 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -327,14 +327,14 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2E3440"
+    background = "#011627"
     foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#2E3440"
+    background = "#011627"
     foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable

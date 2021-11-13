@@ -34,7 +34,7 @@ module-margin-right = 1
 
 #font-0 = JetBrains Mono:pixelsize=12:style=Medium;2
 font-0 = Iosevka NerdFont:style=Medium:pixelsize=14;3
-font-2 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
+font-1 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
 
 modules-left = bspwm i3 spotify
 modules-center = date
