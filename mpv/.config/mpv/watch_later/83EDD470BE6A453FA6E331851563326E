@@ -1,0 +1,4 @@
+start=257.800000
+fullscreen=yes
+af=@acompressor:acompressor=release=250:knee=2dB:ratio=3:threshold=-25dB:attack=20:makeup=8dB
+sub-visibility=no

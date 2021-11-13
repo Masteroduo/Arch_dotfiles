@@ -1,0 +1,4 @@
+start=58.700000
+pause=yes
+vf=crop=w=480:x=0:y=209:h=643,crop=w=480:h=636:y=216:x=0,crop=w=480:x=0:y=205:h=647
+af=@acompressor:acompressor=knee=2dB:threshold=-25dB:makeup=8dB:release=250:ratio=3:attack=20

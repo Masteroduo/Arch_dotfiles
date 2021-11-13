@@ -1,0 +1,3 @@
+start=883.549333
+fullscreen=yes
+af=@acompressor:acompressor=threshold=-25dB:attack=20:makeup=8dB:knee=2dB:release=250:ratio=3

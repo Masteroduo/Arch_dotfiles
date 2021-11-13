@@ -1,0 +1,4 @@
+start=765.915000
+pause=yes
+brightness=-1
+af=@acompressor:acompressor=makeup=8dB:ratio=3:knee=2dB:threshold=-25dB:attack=20:release=250
