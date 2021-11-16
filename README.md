@@ -28,7 +28,7 @@ These are my dotfiles for my Arch Linux installation, feel free to use it on you
   14. nitrogen - I use nitrogen to set wallpapers on my window managers
   15. Thunar - My favorite File Manager. 
 
-Here is a one liner : `sudo pacman -S picom sxhkd bspwm thunar nitrogen mpv kitty neofetch yt-dlp dunst rofi discord flameshot neovim` & `yay -S polybar`
+Here is a one liner : `sudo pacman -S picom sxhkd bspwm thunar nitrogen mpv kitty neofetch yt-dlp dunst rofi discord flameshot neovim` & `yay -S polybar spotify`
 
 
 ## Other Applications I use
