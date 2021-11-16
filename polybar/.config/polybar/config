@@ -3,7 +3,7 @@
 ########################
 
 [colors]
-background = #011627
+background = #1A011627
 background-alt = #0585C6
 foreground = #ffffff
 foreground-alt = #ffffff
@@ -25,8 +25,7 @@ line-size = 2
 
 
 ;padding-left = 1
-;padding-right = 1 
-
+;padding-right = 1
 override-redirect = true
 wm-restack = bspwm
 ;module-margin-left = 1 
@@ -38,7 +37,7 @@ font-1 = Noto Sans CJK JP:size=12:style=Medium:antialias=true;2
 
 modules-left = bspwm i3 spotify
 modules-center = date
-modules-right = temperature cpu memory battery pulseaudio wlan
+modules-right = temperature cpu memory battery pulseaudio #wlan
 
 ;tray-position = right
 tray-padding = 1

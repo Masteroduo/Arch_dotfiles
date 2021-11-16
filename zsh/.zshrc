@@ -1,6 +1,3 @@
-# To Flex on ubuntu users
-#neofetch
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -118,11 +115,10 @@ alias bar="nvim ~/.config/polybar/config"
 alias d="nvim ~/.config/dunst/dunstrc"
 alias zsh="nvim ~/.zshrc"
 alias neovim="nvim ~/.config/nvim/init.vim"
-alias die="systemctl poweroff"
-alias reboot="systemctl reboot"
 alias bat="sudo tlp start"
 alias r="ranger"
 alias jup='jupyter notebook'
+alias intel='sudo intel_gpu_top'
 alias comp='pkill picom'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
