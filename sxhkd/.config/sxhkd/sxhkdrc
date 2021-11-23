@@ -18,7 +18,7 @@ ctrl + alt + Delete
 super + Escape
 	pkill -USR1 -x sxhkd
 
-super + shift + c
+super + shift + p
 	killall "picom" && notify-send "Picom Killed"
 
 # bspwm hotkeys
@@ -127,8 +127,6 @@ super + shift + z
 super + shift + x
 	dolphin
 
-super + shift + c
-	brave
 	
 # Spotify controls
 XF86Audio{Prev,Next}
