@@ -107,7 +107,7 @@ alias vi='nvim'
 alias b="nvim ~/.config/bspwm/bspwmrc"
 alias s="nvim ~/.config/sxhkd/sxhkdrc"
 alias p="nvim ~/.config/picom/picom.conf"
-#alias k="nvim ~/.config/kitty/kitty.conf"
+alias k="nvim ~/.config/kitty/kitty.conf"
 alias z="zathura"
 alias ls="lsd"
 alias l="lsd -alh"
@@ -121,6 +121,7 @@ alias jup='jupyter notebook'
 alias intel='sudo intel_gpu_top'
 alias comp='pkill picom'
 alias yt='ytfzf -t'
+alias u='unzip'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

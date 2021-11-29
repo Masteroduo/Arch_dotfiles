@@ -27,9 +27,9 @@ confirm_exit() {
 }
 
 # Message
-msg() {
-	rofi -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
-}
+#msg() {
+#	rofi -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+#}
 
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
