@@ -169,7 +169,7 @@ full-at = 100
 format-charging-underline = ${colors.primary}
 format-charging = <animation-charging>  <label-charging>
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = <ramp-capacity>  <label-discharging>
 format-discharging-underline = ${colors.primary}
 
 format-full-prefix = "   "

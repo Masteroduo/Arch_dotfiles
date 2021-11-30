@@ -1,3 +1,0 @@
-start=76.480000
-fullscreen=yes
-af=@acompressor:acompressor=ratio=3:knee=2dB:makeup=8dB:release=250:threshold=-25dB:attack=20

@@ -1,3 +1,0 @@
-start=752.877000
-vf=crop=w=790:x=329:y=178:h=684
-af=@acompressor:acompressor=makeup=8dB:release=250:attack=20:threshold=-25dB:knee=2dB:ratio=3
