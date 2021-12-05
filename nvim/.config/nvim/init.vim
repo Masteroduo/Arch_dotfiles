@@ -27,6 +27,7 @@ endif
 lua require 'colorizer'.setup()
 
 colorscheme nightfly
+let g:nightflyTransparent = 1
 
 nmap <F5> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
