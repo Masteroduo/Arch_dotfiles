@@ -115,10 +115,10 @@ XF86AudioLowerVolume
 		
 # Brightness
 super + F2
-	xbacklight -dec 2
+	brightnessctl -d "intel_backlight" set 2%-     
 
 super + F3
-	xbacklight -inc 2
+	brightnessctl -d "intel_backlight" set +2%    
 
 # Applications
 super + shift + z

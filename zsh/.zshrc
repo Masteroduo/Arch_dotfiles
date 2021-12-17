@@ -123,6 +123,7 @@ alias intel='sudo intel_gpu_top'
 alias comp='pkill picom'
 alias yt='ytfzf -t'
 alias u='unzip'
+alias nvidia='watch nvidia-smi'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
