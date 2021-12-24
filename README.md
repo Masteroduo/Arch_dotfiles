@@ -1,15 +1,6 @@
 # Sha's Dotfiles
 These are my dotfiles for my Arch Linux installation, feel free to use it on your system and modify it according to your needs.
 
-## Screenshots
-![image](https://user-images.githubusercontent.com/79645349/140621672-3b057eca-b857-4d4a-8184-16fdf504a505.png)
-![image](https://user-images.githubusercontent.com/79645349/140621683-3c39e69f-7b23-4c69-aee0-51c33de01cdf.png)
-![image](https://user-images.githubusercontent.com/79645349/140621748-8e294af3-c0a3-420e-b5d5-8e6f712d7a68.png)
-![image](https://user-images.githubusercontent.com/79645349/140621819-1ac32756-4358-4d4a-97e5-f7e63cfe863e.png)
-![image](https://user-images.githubusercontent.com/79645349/140621918-05b833bd-02ee-4012-a7de-c4df1ef31236.png)
-
-
-
 ## Requirements
 
 1. picom - my preferred compositor. This helps me achieve transparency,shadows,etc.
