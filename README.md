@@ -1,6 +1,12 @@
 # Sha's Dotfiles
 These are my dotfiles for my Arch Linux installation, feel free to use it on your system and modify it according to your needs.
 
+## My Linux Rice Videos
+
+https://user-images.githubusercontent.com/79645349/153767594-34d5b340-d1d4-470d-9ac7-81429051a7dd.mp4
+
+https://user-images.githubusercontent.com/79645349/153767425-66196672-414b-426c-ab4e-310a3076b36d.mp4
+
 ## Requirements
 
 1. picom - my preferred compositor. This helps me achieve transparency,shadows,etc.
